@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De La Cream Business Park - Preview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
+        
+        .btn-primary {
+            background: #f2760a;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        .btn-primary:hover { background: #e35d05; }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <div class="bg-orange-600 text-white p-2 rounded-lg">
+                        <span class="font-bold text-xl">DC</span>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-xl text-gray-900">De La Cream</h1>
+                        <p class="text-sm text-gray-600">Business Park</p>
+                    </div>
+                </div>
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#" class="text-orange-600 font-medium">Home</a>
+                    <a href="#" class="text-gray-700 hover:text-orange-600">Business Park</a>
+                    <a href="#" class="text-gray-700 hover:text-orange-600">Restaurant</a>
+                    <a href="#" class="text-gray-700 hover:text-orange-600">Hotel Rooms</a>
+                    <a href="#" class="text-gray-700 hover:text-orange-600">Gallery</a>
+                    <a href="#" class="text-gray-700 hover:text-orange-600">Contact Us</a>
+                    <button class="btn-primary">Admin</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-screen flex items-center justify-center text-white text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                De La Cream
+                <span class="block text-orange-400">Business Park</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                Where business excellence meets luxury hospitality. Experience premium office spaces, 
+                fine dining, and world-class accommodation all in one location.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="btn-primary text-lg px-8 py-4">Explore Business Park</button>
+                <button class="border-2 border-white text-white hover:bg-white hover:text-gray-900 font-medium py-4 px-8 rounded-lg transition-all duration-200">
+                    Get In Touch
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 px-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Premium Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Discover a world of possibilities at De La Cream Business Park
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Business Park -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Business Park</h3>
+                        <p class="text-gray-600 mb-6">Premium office spaces with modern amenities and professional environment.</p>
+                        <button class="text-orange-600 hover:text-orange-700 font-medium">Learn More →</button>
+                    </div>
+                </div>
+
+                <!-- Restaurant -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Restaurant</h3>
+                        <p class="text-gray-600 mb-6">Fine dining experience with exquisite cuisine and elegant ambiance.</p>
+                        <button class="text-orange-600 hover:text-orange-700 font-medium">Learn More →</button>
+                    </div>
+                </div>
+
+                <!-- Hotel -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Hotel Rooms</h3>
+                        <p class="text-gray-600 mb-6">Luxury accommodation with world-class service and comfort.</p>
+                        <button class="text-orange-600 hover:text-orange-700 font-medium">Learn More →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 px-4 bg-orange-600 text-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Experience Excellence?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                Join hundreds of successful businesses and discerning guests who have made 
+                De La Cream Business Park their preferred choice.
+            </p>
+            <div class="mb-8">
+                <p class="text-2xl font-semibold">📞 0111717542</p>
+                <p class="text-lg">info@delacream.co.ke</p>
+                <p class="text-lg">📍 Busia, Kenya</p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-orange-600 hover:bg-gray-100 font-medium py-3 px-8 rounded-lg">
+                    Book Office Space
+                </button>
+                <button class="border-2 border-white text-white hover:bg-white hover:text-orange-600 font-medium py-3 px-8 rounded-lg">
+                    Reserve Hotel Room
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="flex items-center justify-center space-x-2 mb-4">
+                <div class="bg-orange-600 text-white p-2 rounded-lg">
+                    <span class="font-bold text-lg">DC</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg">De La Cream Business Park</h3>
+                </div>
+            </div>
+            <p class="text-gray-400 mb-6">
+                Premium business park offering world-class office spaces, fine dining, 
+                and luxury accommodation all in one convenient location.
+            </p>
+            <p class="text-gray-400 text-sm">
+                © 2024 De La Cream Business Park. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Add some basic interactivity
+        document.querySelectorAll('button, a').forEach(element => {
+            element.addEventListener('click', function(e) {
+                if (this.textContent.includes('Admin')) {
+                    alert('Admin panel will be available after installing Node.js and running the development server.');
+                } else if (this.textContent.includes('Book') || this.textContent.includes('Reserve')) {
+                    alert('Booking system will be functional after setting up the backend server.');
+                } else {
+                    console.log('Clicked:', this.textContent);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
